@@ -53,7 +53,7 @@ A beautifully designed single-page Flask-based travel website showcasing the nat
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ujjwal154/Tourism-website/edit/main/
+git clone https://github.com/ujjwal154/Tourism-website/tree/main
 cd tourism-website
 ```
 
