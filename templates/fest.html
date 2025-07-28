@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% block title %} EXPLORE NATURE - FEST & EVENTS {% endblock %}
+
+{% block content %}
+<header>
+    <div class="header-section" id="header">
+        <div id="fest-overlay">
+            <div id="navbar">
+                {% include 'partials/navbar.html' %}
+            </div>
+            <h1 id="header-heading">Culture & Heritage</h1>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="hero-section">
+        <h1>Explore Unique Festivals In Himachal</h1>
+        <div class="hero-left">
+            <h2>Festivals of Himachal Pradesh <br> Explore the Vibrant Cultural Celebrations</h2>
+            <p>Himachal Pradesh is a state in India where people of different communities and tribes live together
+                in complete harmony and stay in sync with the bounty of nature. Along with imposing landscapes,
+                there are many colorful festivals of Himachal Pradesh that beckons travelers from all over the
+                world.
+                With a vast range of festivals, we have handpicked 16 vibrant fairs and festivals of Himachal
+                Pradesh that give a kaleidoscopic view of diversity and unique traditions that are deeply rooted in
+                their culture. Take a dekko</p>
+        </div>
+        <div class="fest-hero-right">
+            <img src="{{url_for('static', filename='images/fest_hp/img-1.jpg')}}" alt="fest-hp">
+        </div>
+    </div>
+
+
+    <div class="fest-main-section">
+        <div class="top-overlay">
+            <div class="main-top">
+                <h2 id="main-top-h2">Best festivals of Himachal Pradesh</h2>
+                <a href="#travel-package">
+                <button type="button" id="main-top-btn"> Get Pacakge </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="main-center" id="fest-container">
+            <div class="fest-event">
+                <h2>Kullu Dussehra</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-1.jpg')}}" alt="Dussehra">
+                <h3>Kullu Dussehra Date: Thu,2 Oct 2025</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Losar</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-2.jpg')}}" alt="losar">
+
+                <h3>Losar 2025: Fri, 28 Feb, 2025 – Sun, 2 Mar, 2025</h3>
+            </div>
+            <div class="fest-event">
+                <h2>Halda</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-3.jpg')}}" alt="halda">
+
+                <h3> Halda 2025: Jan 27 2025</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Sazo Festival</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-4.jpg')}}" alt="sazo-festival">
+
+                <h3>Sazo Festival 2025: Jan 14 2025 Venue: Kinnaur</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Doongri Fair</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-5.jpg')}}" alt="Dongri">
+
+                <h3>Doongri Fair 2025: TBA</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Shimla Summer Festival</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-6.jpg')}}" alt="losar">
+
+                <h3>Dates : Early June 2025
+                    Venue : The Ridge</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Winter Carnival Manali</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-7.jpg')}}" alt="halda">
+
+                <h3>Manali Winter Carnival 2025: 20th of January
+                    Venue : Manali</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Phulaich Festival, Kinnaur</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-8.jpg')}}" alt="Kinnaur-fest">
+
+                <h3>When: September</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Kasol Music Festival</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-9.jpg')}}" alt="#Kasol-fest">
+
+                <h3>General tickets : INR 3000 ~ INR 6000
+                    <br>VIP tickets : INR 4000 ~ INR 8000
+                </h3>
+            </div>
+            <div class="fest-event">
+                <h2>Mandi Shivaratri Fair, Himachal Pradesh</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-10.jpg')}}" alt="mandi-fair">
+
+                <h3>When: February/ March</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Himachal Hill Festival</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-11.jpg')}}" alt="hill-fest">
+
+                <h3>When: 30th - 31st Decemberbr <br>
+                    Event rules: Those under 18 are not allowed.</h3>
+
+            </div>
+            <div class="fest-event">
+                <h2>Pori Festival, Himachal Pradesh</h2>
+                <img src="{{url_for('static', filename='images/fest_hp/fest-12.jpg')}}" alt="Kinnaur-fest">
+
+                <h3>When: July/ August</h3>
+
+            </div>
+        </div>
+        <div class="pagination-controls">
+            <button onclick="prevPage()">Prev</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <div class="travel-package" id="travel-package">
+        <h1 id="travel-package-heading">Himachal Pradesh Travel Packages</h1>
+
+        <div class="travel-package-cards-wrapper">
+            <div class="travel-package-cards" id="package-slider">
+                {% for p in package %}
+                <div class="hp-package-card">
+                    <div id="hp-package-one">
+                        <img src="{{url_for('static', filename= 'images/'+ p.image )}}" alt="">
+                    </div>
+                    <h2 id="hp-package-h2">{{ p.duration}}</h2>
+
+                    <div id="hp-pack-botm">
+                        <p>{{ p.package_name}} <br>
+                            ₹{{ p.price }}</p>
+                        <button class="bookBtn" onclick="window.location.href='{{url_for('book_package', package_id = p._id|string)}}'">Book Package</button>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+
+    <div id="fest-footer" class="footer">
+        <div class="top-block">
+            <div class="company-info">
+                <img src="{{url_for('static', filename='images/hp_img/fotter-logo.png')}}" alt="">
+                <h1>FOLLOW US ON</h1>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-x-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <ul class="quick-link">
+                    <li><a href="#travel-package">Attractions</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Festival & Events</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Incredible India content</a></li>
+                </ul>
+            </div>
+            <div class="suscrib">
+                <h1>Newsletter</h1>
+                <p>signup for exciting news, learn more about our events and get great travel ideas</p>
+                <button>Subscribe now</button>
+            </div>
+            <div class="chat">
+                <h1>Scan to Chat</h1>
+                <img src="{{url_for('static', filename='images/hp_img/chat-img.jpg')}}" alt="chat-img">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="botm-block">
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Contact Us</a>
+
+            <p>&copy; Ministry of Tourism, Government of India.</p>
+        </div>
+    </div>
+
+</footer>
+
+
+{% endblock %}

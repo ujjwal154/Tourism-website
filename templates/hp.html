@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% block title %} EXPLORE NATURE - Explore Himachal {% endblock %}
+
+{% block content %}
+<main>
+    <div id="manali">
+
+        <div id="top">
+            <div id="overlay">
+                <div id="navbar">
+                    {% include 'partials/navbar.html' %}
+                </div>
+                <div id="hero-top">
+                    <h1>हिमाचल ~ A destination</h1>
+                    <p>~for evey bucket list</p>
+                </div>
+                <div id="hero-bottom">
+                    <h2>Attractions NearBy</h2>
+
+                    <div id="bottom-menu">
+                        <a href="{{url_for('la_hp')}}">Rohtang Pass</a>
+                        <a href="{{url_for('la_hp')}}">Leh Ladakh</a>
+                        <a href="{{url_for('la_hp')}}">Spitti</a>
+                        <a href="{{url_for('la_hp')}}">Solang Nullah</a>
+
+                    </div>
+                    <div id="hp-btn">
+                        <span id="back"><i class="fa-solid fa-arrow-left"></i></span>
+                        <span id="next"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="center">
+            <div id="hp-content"> <!--i want  this in left side  -->
+                <h1>Discover the mystic land of Himachal</h1>
+                <p>In the heart of the majestic western Himalayas, Himachal is a land known as "Dev Bhumi," revered as
+                    the divine abode of numerous Gods and Goddesses. Throughout the state, one can discover an
+                    enchanting fusion of stone and wood temples, each narrating a unique tale of spirituality and
+                    devotion. The culture of Himachal is woven with intricate traditions and celebrations, rendering it
+                    a truly unparalleled destination. Embraced by mysterious valleys, formidable cliffs, ancient
+                    glaciers, and towering pine forests, Himachal embodies a symphony of nature's grandeur. Its rivers
+                    and diverse flora and fauna add further depth to this splendid melody.
+
+                    The allure of Himachal extends beyond its spiritual aura, encompassing natural hot water springs,
+                    storied forts, lakes crafted by both nature and human ingenuity, and the timeless sight of shepherds
+                    tending to their flocks amidst the scenic vistas. Every nook and corner of this resplendent state
+                    offers an abundance of joy and serenity, promising an unforgettable experience for every discerning
+                    traveller.</p>
+            </div>
+
+            <div id="hp-map"> <!--i want  this in right  side  -->
+                <!-- here i want to place gpay map which shows location of himachal pradesh  -->
+                <iframe
+                    src="
+                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735960.4102878368!2d75.98235947421063!3d31.810075212584582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2sHimachal%20Pradesh!5e0!3m2!1sen!2sin!4v1751016330087!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="fast"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div id="feature-section">
+            <div id="top-feature">
+                <div id="top-text">
+                    <p>A trove of </p>
+                    <h2>FASCINATING<br>FACTS</h2>
+                </div>
+
+            </div>
+            <div id="center-feature">
+                <img src="{{url_for('static', filename='images/hp_img/bg-8.jpg')}}" alt="shimla">
+
+            </div>
+        </div>
+
+        <div class="exp-feature">
+            <div class="explore-top-card" id="exp-top-text">
+                <h1 id="exp-top-text-h1">EXPLORE EXPERIENCES</h1>
+                <p>(-in हिमाचल प्रदेश-)</p>
+                <button type="button" id="exp-feature-btn">Find Packages <span><i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></span></button>
+            </div>
+
+            <div class="explore-card" id="exp-card-one">
+                <a href="">
+                    <h1>Bir Billing</h1>
+                </a>
+            </div>
+
+            <div class="explore-card" id="exp-card-two">
+                <a href="">
+                    <h1>Ladkah Monestry</h1>
+                </a>
+            </div>
+
+            <div class="explore-card" id="exp-card-three">
+                <a href="">
+                    <h1>Manali in Winters</h1>
+                </a>
+            </div>
+
+            <div class="explore-card" id="exp-card-four">
+                <a href="">
+                    <h1>Chamba</h1>
+                </a>
+            </div>
+
+            <div class="explore-card" id="exp-card-five">
+                <a href="">
+                    <h1>Shimla Queen of Hills</h1>
+                </a>
+            </div>
+
+
+
+
+
+
+        </div>
+</main>
+
+<footer>
+
+    <div class="footer">
+        <div class="top-block">
+            <div class="company-info">
+                <img src="{{url_for('static', filename='images/hp_img/fotter-logo.png')}}" alt="">
+                <h1>FOLLOW US ON</h1>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-x-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <ul class="quick-link">
+                    <li><a href="#">Attractions</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Festival & Events</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Incredible India content hub</a></li>
+                </ul>
+            </div>
+            <div class="suscrib">
+                <h1>Newsletter</h1>
+                <p>signup for exciting news, learn more about our events and get great travel ideas</p>
+                <button>Subscribe now</button>
+            </div>
+            <div class="chat">
+                <h1>Scan to Chat</h1>
+                <img src="{{url_for('static', filename='images/hp_img/chat-img.jpg')}}" alt="chat-img">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="botm-block">
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Contact Us</a>
+
+            <p>&copy; Ministry of Tourism, Government of India.</p>
+        </div>
+    </div>
+
+</footer>
+
+{% endblock %}

@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% block title %} EXPLORE NATURE - Explore UK {% endblock %}
+
+{% block content %}
+
+<div class="uk-overlay">
+  <div id="navbaruk">
+    {% include 'partials/navuk.html' %}
+  </div>
+  <img src="{{url_for('static', filename='images/uk_img/uk-logo.jpg')}}" alt="uk-logo">
+</div>
+
+<!-- hero main section -->
+<main>
+  <section>
+    <div class="latest-loc-uk">
+      <h1>Latest Gallery collection</h1>
+      <div class="slide">
+        <div class="uk-card-content" id="nainital-loc">
+        <h2>Nainital</h2> 
+        </div>
+        <div class="uk-card-content" id="national-park">
+        <h2>Raja Ji National Park</h2> 
+        </div>
+        <div class="uk-card-content" id="rishikesh-loc">
+        <h2>Rishikesh</h2>
+        </div>
+        <div class="uk-card-content" id="shri-kedarnath">
+        <h2>Kedarnath Temple</h2> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <hr class="uk-section-distribute">
+  <div class="explore-content">
+    <div class="top-content">
+      <img src="{{url_for('static', filename='images/uk_img/uk-logo-1.jpg')}}" alt="uk-logo">
+      <h1 id="curved">EXPLORE उत्तराखंड</h1>
+      <p>In many ways -></p>
+    </div>
+    <div class="explore-cards">
+      <div class="explore-card-content">
+        <img src="{{url_for('static', filename='images/uk_img/wildlife/uk-13.jpg')}}" alt="wildlife">
+        <h2>WildLife</h2>
+        <p>Conservation reserves, world heritage sites and national parks teeming with varied flora and fauna
+          uttrakhand has it all.</p>
+      </div>
+      <div class="explore-card-content">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/uk-12.jpg')}}" alt="adventure">
+        <h2>Adventure</h2>
+        <p>From camping, skiing and river raft6ing to stargazing, trekking and bunjee jumping - uttrakhand is a heaven
+          for thrill seekers.</p>
+      </div>
+      <div class="explore-card-content">
+        <img src="{{url_for('static', filename='images/uk_img/wellness/uk-14.jpg')}}" alt="wellness">
+        <h2>Wellness</h2>
+        <p>Touted as the yoga capital of the world, Uttrakhand boasts a number of centres run by professionals and is
+          known for spiritual wellness as well. </p>
+      </div>
+      <div class="explore-card-content">
+        <img src="{{url_for('static', filename='images/uk_img/spirtuality/uk-13.jpg')}}" alt="spirtuality">
+        <h2>Spirtuality</h2>
+        <p>Known as Devbhumi or land of the Gods, the state holds a prominent position in the country's religious map.
+        </p>
+      </div>
+      <div class="explore-card-content">
+        <img src="{{url_for('static', filename='images/uk_img/leisure/uk-14.jpg')}}" alt="leisure">
+        <h2>Leisure</h2>
+        <p>Uttrakhand is home to warm and friendly people whose cultures and traditions are likely to be seen orn
+          experienced anywhere else.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <div class="religious-sites">
+    <img id="banner-img" src="{{url_for('static', filename='images/uk_img/uk-7-banner.jpg')}}" alt="Badrinath Temple">
+    <div class="relg-title">
+      <img src="{{url_for('static', filename='images/uk_img/relg-logo.jpg')}}" alt="logo">
+      <h1>Religious sites</h1>
+    </div>
+
+    <div class="religious-cards">
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-1.jpg')}}" alt="kedarnath-temple">
+        <h2>Kedarnath Temple</h2>
+        <button>Explore more</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-2.jpg')}}" alt="tungnath-temple">
+        <h2>Thungnath Temple</h2>
+        <button>Explore More</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-3.jpg')}}" alt="badrinath-temple">
+        <h2>Badrinath Temple</h2>
+        <button>Explore More</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-4.jpg')}}" alt="haridwar">
+        <h2>Haridwar</h2>
+        <button>Explore More</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-5.jpg')}}" alt="shri-hemkund-temple">
+        <h2>Gurdwara Hemkund Sahib</h2>
+        <button>Explore More</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-6.jpg')}}" alt="yamunotri-temple">
+        <h2>Yamunotri Temple</h2>
+        <button>Explore More</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-7.jpg')}}" alt="gangotri-temple">
+        <h2>Gangotri Temple</h2>
+        <button>Explore More</button>
+      </div>
+      <div class="relg-card">
+        <img src="{{url_for('static', filename='images/uk_img/religious-sites/relg-8.jpg')}}" alt="Gaumukh">
+        <h2>Gaumukh</h2>
+        <button>Explore More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="adventure-sites">
+    <div class="ad-top">
+      <img src="{{url_for('static', filename='images/uk_img/adventure/ad-logo.jpg')}}" alt="adventure-logo">
+      <h1>Adventure Sites</h1>
+    </div>
+    <div class="adventure-cards">
+      <div class="ad-card">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/ad-1.jpg')}}" alt="">
+        <h2>Valley of Flowers</h2>
+        <p>There’s something magical about walking through a valley full of colorful flowers blooming in every
+          direction, Snowy mountains rise in the distance, and the soft sound of rivers flows beside your path.</p>
+        <a href="">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="ad-card">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/ad-2.jpg')}}" alt="tiffin-top">
+        <h2>Tiffin Top Nainital</h2>
+        <p>Tiffin Top, also lovingly called Dorothy’s Seat, is one of the best viewpoints in this beautiful hill
+          station of Uttarakhand. Located at an altitude of 2,292 meters (7,520 feet), it opens up to stunning
+          panoramic scenes of the Kumaon hills and the majestic Himalayas in the distance.</p>
+        <a href="">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="ad-card">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/ad-3.jpg')}}" alt="naina-peak">
+        <h2>Naina Peak</h2>
+        <p>Earlier called China Peak, this place was renamed to Naina Peak after the 1962 Indo-China war. This change
+          was done to reflect the emotions and sentiments of the locals.</p>
+        <a href="">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="ad-card">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/ad-4.jpg')}}" alt="rafting">
+        <h2>River rafting</h2>
+        <p>Rishikesh rafting is a water-based activity that involves navigating the rapids of the Ganges River on an
+          inflatable raft. The thrill of rafting through the rapids while surrounded by the stunning Himalayan scenery
+          is an experience that is not easily forgotten.</p>
+        <a href="">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="ad-card">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/ad-5.jpg')}}" alt="nelong-valley">
+        <h2>Nelong Valley</h2>
+        <p>Located in the Uttarkashi district of Uttarakhand, Nelong Valley is a hidden treasure of India. Sitting at
+          an altitude of around 11,000 feet, this mesmerizing valley offers a stunning blend of Himalayan landscapes
+          and a rich history as part of the ancient Indo-Tibetan trade route.</p>
+        <a href="">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="ad-card">
+        <img src="{{url_for('static', filename='images/uk_img/adventure/ad-7.jpg')}}" alt="vasudhara-fall">
+        <h2>Vasudhara Fall</h2>
+        <p>Vasudhara Falls is a magnificent waterfall in the Garhwal Himalayas, near Badrinath, known for its
+          spiritual significance and mesmerizing beauty. Surrounded by snow-capped peaks, this hidden gem attracts
+          pilgrims and adventure seekers alike. The trek to Vasudhara Falls offers breathtaking views and a deep
+          connection to ancient legends. </p>
+        <a href="">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+
+  <div class="footer">
+    <div class="top-block">
+      <div class="company-info">
+        <img src="{{url_for('static', filename='images/hp_img/fotter-logo.png')}}" alt="">
+        <h1>FOLLOW US ON</h1>
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span><i class="fa-brands fa-facebook"></i></span>
+        <span><i class="fa-brands fa-youtube"></i></span>
+        <span><i class="fa-brands fa-x-twitter"></i></span>
+        <span><i class="fa-brands fa-linkedin-in"></i></span>
+      </div>
+      <div class="links">
+        <h1>Quick Links</h1>
+        <ul class="quick-link">
+          <li><a href="#">Attractions</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Festival & Events</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Incredible India content hub</a></li>
+        </ul>
+      </div>
+      <div class="suscrib">
+        <h1>Newsletter</h1>
+        <p>signup for exciting news, learn more about our events and get great travel ideas</p>
+        <button>Subscribe now</button>
+      </div>
+      <div class="chat">
+        <h1>Scan to Chat</h1>
+        <img src="{{url_for('static', filename='images/hp_img/chat-img.jpg')}}" alt="chat-img">
+      </div>
+    </div>
+    <hr class="line">
+    <div class="botm-block">
+      <a href="#">Terms of Use</a>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Contact Us</a>
+
+      <p>&copy; Ministry of Tourism, Government of India.</p>
+    </div>
+  </div>
+
+</footer>
+
+{% endblock %}

@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% block title %} EXPLORE NATURE - Cottage Stay {% endblock %}
+
+{% block content %}
+<header>
+    <div class="head">
+        <div class="overlay">
+            <div id="navbar">
+                {% include 'partials/navbar.html' %}
+            </div>
+        </div>
+
+        <div class="head-section">
+            <h1>Search Hotels in Hp/UK, India</h1>
+            <h2>Enter your date and Search your Hotels</h2>
+            <form method="post" action="/hotel-stay">
+                <div class="head-form">
+                    <div class="form-group">
+                        <label for="destination">Where are you going?</label>
+                        <input type="text" id="destination" name="destination" list="destinations"
+                            placeholder="Enter location">
+                        <datalist id="destinations">
+                            <option value="Manali">
+                            <option value="Shimla">
+                            <option value="Dharamshala">
+                            <option value="Kullu">
+                            <option value="Kasool">
+                            <option value="Kasauli">
+                            <option value="Dalhousie">
+                            <option value="Nainital">
+                            <option value="Mussoorie">
+                            <option value="Rishikesh">
+                            <option value="Dehradun">
+                        </datalist>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkin">Check-in-date</label>
+                        <input type="date" id="checkin" name="checkin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkout">Check-out-date</label>
+                        <input type="date" id="checkout" name="checkout">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number Of Person</label>
+                        <div class="person-input">
+                            <input type="text" class="person-count" id="personcount" value="1" readonly>
+                            <button type="button" onclick="increaseCount()">+</button>
+                            <button type="button" onclick="decreaseCount()">-</button>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Search</button>
+            </form>
+
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="hotel-main-section">
+        <div class="hotel-main-content">
+            <h1>Best deals in Himachal Pradesh</h1>
+
+            <div class="hotel-cards">
+                {% for h in hotel %}
+                <div class="hotel-card" id="manali-card">
+                    <img src="{{url_for('static', filename='images/'+ h.image)}}" alt="hotel-image">
+                    <h1>{{h.hotel_name}}</h1>
+                    <h2>Staring From ₹{{h.price}}</h2>
+                    <p>Hotel-Type : {{h.hotel_type}}</p>
+                    <p>Contact no: {{h.phone}}</p>
+                    <p>Email : {{h.email}}</p>
+                    <p>Rating : {{h.review}}</p>
+                    <p>Policy : {{h.policy}}</p>
+                    <div class="hotel-btm">
+                        <button type="button" onclick="window.location.href='{{url_for('hotel_book', hotel_id = h._id|string)}}'">Book</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <hr id="line">
+    <section>
+        <div class="uk-section">
+            <h1>Best deals in Uttrakhand</h1>
+            <div class="uk-content">
+                <div class="uk-hotel-cards">
+                    {% for u in uk_hotel %}
+                    <div class="uk-hotel-card" id="nainital-card" style="background:linear-gradient(rgba(0, 0, 0, 0.43)) ,url('../static/images/{{u.image}}');">
+                        <h1>{{u.hotel_name}}</h1>
+                        <h2>Staring From ₹{{u.price}}</h2>
+                        <div class="uk-hotel-btm">
+                            <button type="button" onclick="window.location.href='{{url_for('hotel_book', hotel_id = u._id|string)}}'">Book</button>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <hr id="line">
+
+    <section>
+        <div class="hotel-feature">
+            <h1>Popular emenities for Cottage</h1>
+            <div class="feature">
+                <div class="feature-card">
+                    <img src="{{url_for('static', filename='images/cottage/cottage-feature/kitchen.png')}}"
+                        alt="kitchen">
+                    <h2>Kitchen</h2>
+                </div>
+                <div class="feature-card">
+                    <img src="{{url_for('static', filename='images/cottage/cottage-feature/parking.png')}}"
+                        alt="parking">
+                    <h2>Parking</h2>
+                </div>
+                <div class="feature-card">
+                    <img src="{{url_for('static', filename='images/cottage/cottage-feature/pool.png')}}" alt="pool">
+                    <h2>pool</h2>
+                </div>
+                <div class="feature-card">
+                    <img src="{{url_for('static', filename='images/cottage/cottage-feature/wifi.png')}}" alt="wifi">
+                    <h2>Wifi</h2>
+                </div>
+                <div class="feature-card">
+                    <img src="{{url_for('static', filename='images/cottage/cottage-feature/ac.png')}}" alt="ac">
+                    <h2>Air Conditioning</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+
+    <div class="footer">
+        <div class="top-block">
+            <div class="company-info">
+                <img src="{{url_for('static', filename='images/hp_img/fotter-logo.png')}}" alt="">
+                <h1>FOLLOW US ON</h1>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-x-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <ul class="quick-link">
+                    <li><a href="#">Attractions</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Festival & Events</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Incredible India content hub</a></li>
+                </ul>
+            </div>
+            <div class="suscrib">
+                <h1>Newsletter</h1>
+                <p>signup for exciting news, learn more about our events and get great travel ideas</p>
+                <button>Subscribe now</button>
+            </div>
+            <div class="chat">
+                <h1>Scan to Chat</h1>
+                <img src="{{url_for('static', filename='images/hp_img/chat-img.jpg')}}" alt="chat-img">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="botm-block">
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Contact Us</a>
+
+            <p>&copy; Ministry of Tourism, Government of India.</p>
+        </div>
+    </div>
+
+</footer>
+
+
+{% endblock %}

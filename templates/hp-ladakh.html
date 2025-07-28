@@ -1,0 +1,825 @@
+{% extends 'base.html' %}
+{% block title %} EXPLORE NATURE- LADAKH {% endblock %}
+{% block content %}
+<header>
+    <nav>
+        <div class="hero-banner">
+            <video autoplay muted loop class="bg-video">
+                <source src="{{url_for('static', filename='images/hp_img/ladakh/bg-video.mp4')}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="navbar">
+                {% include 'partials/navbar.html' %}
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to ladakh</h1>
+                <p>Explore the beauty of the mountains and valleys</p>
+                <a href="">Explore Now</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="la-main-section">
+        <div class="la-main-content">
+            <h1>About Ladakh</h1>
+            <p>Ladakh, a region in northern India, is known for its beautiful mountains, Buddhist monasteries, and
+                adventure activities like trekking and biking.</p>
+
+            <div class="info-icon">
+                <div class="icon-box">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/altitude.png')}}" alt="altitude">
+                    <p>Altitude: 11,500 ft</p>
+                </div>
+                <div class="icon-box">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/temp.png')}}" alt="temp">
+                    <p>Avg Temp: -10°C to 25°C</p>
+                </div>
+                <div class="icon-box">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/culture.png')}}" alt="culture">
+                    <p>Tibetan-Buddhist Culture</p>
+                </div>
+                <div class="icon-box">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/adventure.png')}}" alt="adventure">
+                    <p>Best Adventure spots</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="highlight">
+            <h1>Ladakh at a Glance</h1>
+            <div class="highlight-cards">
+                <div class="la-card">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/img-1.jpg')}}" alt="pangong-lake">
+                    <h2 id="la-card-h2">Pangong Lake</h2>
+                    <p> Pangong Lake—also known as Pangong Tso—is a breathtaking high-altitude saltwater lake
+                        nestled in
+                        the Himalayas at an elevation of about 4,350 meters (14,270 feet). Stretching over 134
+                        kilometers, the lake spans across eastern Ladakh in India and western Tibet in China, with
+                        only
+                        one-third of it lying in Indian territory.
+
+                    </p>
+                </div>
+                <div class="la-card">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/img-2.jpg')}}" alt="Khardungla-pass">
+                    <h2 id="la-card-h2">Khardungla Top</h2>
+                    <p>Khardung La Top—often dubbed the “Gateway to Nubra and Shyok Valleys”—is one of the highest
+                        motorable passes in the world, perched at an altitude of 5,359 meters (17,582 feet) in the
+                        Union
+                        Territory of Ladakh, India
+                    </p>
+                </div>
+                <div class="la-card">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/img-3.jpg')}}" alt="pangong-lake">
+                    <h2 id="la-card-h2">Stakna Monasterie</h2>
+                    <p>Stakna Monastery, also known as Stakna Gompa, is a serene Buddhist monastery perched on a
+                        hill
+                        shaped like a tiger’s nose—which is exactly what “Stakna” means. Located about 25 km from
+                        Leh on
+                        the left bank of the Indus River, it was founded in the late 16th century by the Bhutanese
+                        scholar and saint Chosje Jamyang Palkar
+                    </p>
+                </div>
+                <div class="la-card">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/img-4.jpg')}}" alt="magnetic-hill">
+                    <h2 id="la-card-h2">Magnetic Hill</h2>
+                    <p> Magnet Hill is a gravity hill located, near Leh in Leh district of Ladakh, India.[1] The
+                        layout
+                        of the area and surrounding slopes create the optical illusion of a hill. The hill road is
+                        actually a downhill road. Objects and cars on the hill road may appear to roll uphill in
+                        defiance of gravity when they are, in fact, rolling downhill.[2] It is 7.5 km southeast of
+                        Nimmoo and 26.5 km west of Leh on Srinagar-Leh road.
+                    </p>
+                </div>
+                <div class="la-card">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/img-5.jpg')}}" alt="nubra-valley">
+                    <h2 id="la-card-h2">Nubra Valley</h2>
+                    <p>Nubra, also called Dumra, is a historical region of Ladakh, India[1] that is currently
+                        administered as a subdivision and a tehsil in the Leh district. Its inhabited areas form a
+                        tri-armed valley cut by the Nubra and Shyok rivers. Its Tibetan name Dumra means "valley of
+                        flowers".
+                    </p>
+                </div>
+                <div class="la-card">
+                    <img src="{{url_for('static', filename='images/hp_img/ladakh/img-6.jpg')}}" alt="leh-palace">
+                    <h2 id="la-card-h2">Leh Palace</h2>
+                    <p> Leh Palace, also known as Lachen Palkar Palace,[1] is a former royal palace overlooking the
+                        city
+                        of Leh in Ladakh, India.[2] It was constructed circa 1600 AD by Sengge Namgyal.[2] The
+                        palace
+                        was abandoned when Dogra forces took control of Ladakh in the mid-19th century and forced
+                        the
+                        royal family to move to Stok Palace.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="ad-highlight">
+            <div class="ad-cards">
+                <h1 class="ad-h">Adventure Activities in Ladakh</h1>
+
+                <div class="ad-card-container">
+                    <div class="ad-card">
+                        <div class="ad-img-slider" id="slider">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/br-1.jpg')}}" alt="bike-ride">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/br-2.jpg')}}" alt="bike-ride">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/br-3.jpg')}}" alt="bike-ride">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/br-4.jpg')}}" alt="bike-ride">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/br-5.jpg')}}" alt="bike-ride">
+                        </div>
+                        <div class="ad-card-content">
+                            <h2 class="ad-card-h2">Bike Rides</h2>
+                            <p class="ad-card-p">scenic Himalayas routes like Leh Manali & Khardungla Pass</p>
+                        </div>
+
+                        <button class="nav right" onclick="slide(1)">&#10095;</button>
+                        <button class="nav left" onclick="slide(-1)">&#10094;</button>
+
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-img-slider" id="tr-slider">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/tr-1.jpg')}}" alt="trekking">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/tr-2.jpg')}}" alt="trekking">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/tr-3.jpg')}}" alt="trekking">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/tr-4.jpg')}}" alt="trekking">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/tr-5.jpg')}}" alt="trekking">
+                        </div>
+                        <div class="ad-card-content">
+                            <h2 class="ad-card-h2">Trekking</h2>
+                            <p class="ad-card-p">Discover trails of Markha Valley & Zanskar mountains.</p>
+                        </div>
+                        <button class="nav right" onclick="trslide(1)">&#10095;</button>
+                        <button class="nav left" onclick="trslide(-1)">&#10094;</button>
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-img-slider" id="cp-slider">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/cp-1.jpg')}}" alt="camping">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/cp-2.jpg')}}" alt="camping">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/cp-3.jpg')}}" alt="camping">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/cp-4.jpg')}}" alt="camping">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/cp-5.jpg')}}" alt="camping">
+                        </div>
+                        <div class="ad-card-content">
+                            <h2 class="ad-card-h2">Trekking</h2>
+                            <p class="ad-card-p">Sleep under the stars in ladakh </p>
+                        </div>
+
+                        <button class="nav right" onclick="cpslide(1)">&#10095;</button>
+                        <button class="nav left" onclick="cpslide(-1)">&#10094;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="la-package">
+            <div class="la-top">
+                <h1 class="package-h">Trending Ladakh Tour Packages</h1>
+                <img src="{{url_for('static', filename='images/hp_img/ladakh/mountain.png')}}" class="package-logo" alt="mountain-png">
+            </div>
+            <div class="slider-wrapper">
+                <div class="la-pack-cards">
+                    <div class="slider-track" id="package-slide">
+                        <div class="package-card">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/pk-1.jpg')}}" alt="journey to ladakh">
+                            <div class="pk-days">
+                                <img src="{{url_for('static', filename='images/hp_img/ladakh/calender.png')}}" alt="calender-icon">
+                                <h3>10 Days</h3>
+                            </div>
+                            <h2>Journey to Ladakh</h2>
+                            <hr class="package-line">
+                            <button class="booking">Book Package</button>
+                        </div>
+
+                        <div class="package-card">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/pk-2.jpg')}}" alt="journey to ladakh">
+
+                            <div class="pk-days">
+                                <img src="{{url_for('static', filename='images/hp_img/ladakh/calender.png')}}" alt="calender-icon">
+                                <h3>10 Days</h3>
+                            </div>
+                            <h2>Kashmir Ladakh Package</h2>
+                            <hr class="package-line">
+                            <button class="booking">Book Package</button>
+                        </div>
+
+                        <div class="package-card">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/pk-3.jpg')}}" alt="journey to ladakh">
+
+                            <div class="pk-days">
+                                <img src="{{url_for('static', filename='images/hp_img/ladakh/calender.png')}}" alt="calender-icon">
+                                <h3>10 Days</h3>
+                            </div>
+
+                            <h2>Ladakh Bike Trip 2025</h2>
+                            <hr class="package-line">
+                            <button class="booking">Book Package</button>
+
+                        </div>
+
+                        <div class="package-card">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/pk-4.jpg')}}" alt="journey to ladakh">
+
+                            <div class="pk-days">
+                                <img src="{{url_for('static', filename='images/hp_img/ladakh/calender.png')}}" alt="calender-icon">
+                                <h3>10 Days</h3>
+                            </div>
+
+                            <h2>Srinagar-Leh Manali Bike Ride</h2>
+                            <hr class="package-lineline">
+                            <button class="booking">Book Package</button>
+
+                        </div>
+
+                        <div class="package-card">
+                            <img src="{{url_for('static', filename='images/hp_img/ladakh/la-adventure/pk-5.jpeg')}}" alt="journey to ladakh">
+
+                            <div class="pk-days">
+                                <img src="{{url_for('static', filename='images/hp_img/ladakh/calender.png')}}" alt="calender-icon">
+                                <h3>12 Days</h3>
+                            </div>
+
+                            <h2>Leh-Ladakh Package From Chandigarh</h2>
+                            <hr class="package-line">
+                            <button class="booking">Book Package</button>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn r" onclick="pkslide(1)">&#10095;</button>
+                <button class="btn l" onclick="pkslide(-1)">&#10094;</button>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="footer">
+        <div class="top-block">
+            <div class="company-info">
+                <img src="{{url_for('static', filename='images/hp_img/fotter-logo.png')}}" alt="">
+                <h1>FOLLOW US ON</h1>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-x-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <ul class="quick-link">
+                    <li><a href="#">Attractions</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Festival & Events</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Incredible India content hub</a></li>
+                </ul>
+            </div>
+            <div class="suscrib">
+                <h1>Newsletter</h1>
+                <p>signup for exciting news, learn more about our events and get great travel ideas</p>
+                <button>Subscribe now</button>
+            </div>
+            <div class="chat">
+                <h1>Scan to Chat</h1>
+                <img src="{{url_for('static', filename='images/hp_img/chat-img.jpg')}}" alt="chat-img">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="botm-block">
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Contact Us</a>
+
+            <p>&copy; Ministry of Tourism, Government of India.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Libertinus+Mono&family=Michroma&family=Playwrite+VN+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Libertinus+Mono&family=Michroma&family=Playwrite+VN+Guides&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400..700&family=Libertinus+Mono&family=Michroma&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+VN+Guides&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    top: 20vh;
+    height: fit-content;
+    z-index: 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.hero-content p {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.hero-content a {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0px 8px;
+    border: 2px solid rgba(0, 0, 0, 0.485);
+    text-shadow: 2px 2px 8px #000;
+}
+
+.hero-content a:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.548));
+}
+
+.la-main-section {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    bottom: 1vh;
+}
+
+.la-main-content {
+    width: 80%;
+    margin: 0px auto;
+    height: 50vh;
+}
+
+.la-main-content h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    color: rgb(255, 254, 254);
+    text-shadow: 2px 2px 8px #000;
+}
+
+.la-main-content p {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    color: white;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.info-icon {
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon-box {
+    height: fit-content;
+    margin: 10px auto;
+    padding: 0px 8px;
+
+}
+
+.icon-box img {
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 12px;
+    padding: 0px 8px;
+    border: 1px solid black;
+}
+
+.highlight {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.highlight h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 3.7rem;
+    text-align: center;
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+    background: linear-gradient(to top, rgb(21, 0, 255), yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px black;
+}
+
+.highlight-cards {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+
+}
+
+.la-card {
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+    width: 50vh;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+}
+
+.la-card:hover {
+    transform: translateY(-10px)
+}
+
+.la-card img {
+    width: 350px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.la-card h2 {
+    color: black;
+    margin: 10px 0px;
+    font-size: 2rem;
+}
+
+.la-card p {
+    font: 1.7rem;
+    color: black;
+}
+
+.ad-highlight {
+    position: relative;
+    top: 70vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.ad-cards {
+    width: 90%;
+    margin: 10px auto;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../static/images/hp_img/ladakh/img-1.jpg') center/cover no-repeat fixed;
+    color: white;
+}
+
+.ad-h {
+    font-family: "Dancing Script", cursive;
+    font-size: 45px;
+    background: linear-gradient(103deg, #3e62f7 26%, #28a1ff 31%, #ffffff 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    position: absolute;
+    top: 5vh;
+    left: 52vh;
+}
+
+.ad-card-container {
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.ad-card {
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+}
+
+
+
+.ad-img-slider {
+    /* background-color: #000; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.ad-img-slider img {
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* flex-shrink: 0; */
+    flex: 0 0 100%;
+    object-fit: cover;
+}
+
+.ad-card-content{
+    width: 100%;
+    height: 12vh;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 36vh;
+    background-color: #1734a888;
+    z-index: 1;
+}
+
+ .ad-card-content h2 {
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Cavet', cursive;
+    text-shadow: 10px 10px 10px rgb(1, 1, 1);
+}
+
+.ad-card-content p {
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 3vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 8px rgb(1, 1, 1);
+} 
+
+
+.nav {
+    position: absolute;
+    top: 150px;
+    font-size: 32px;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 10px;
+}
+
+
+.la-package {
+    position: relative;
+    top: 55vh;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.197));
+}
+
+.la-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.package-h {
+    margin-top: 30px;
+    font-size: 45px;
+    font-family: serif;
+    background: linear-gradient(6deg, #3effd9 21%, #4c80c0 38%, #ffecec 98%);
+    text-shadow: 4px 2px 1px rgb(0, 13, 255);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.package-logo {
+    width: 200px;
+    height: 10vh;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 1320px; 
+    margin: auto;
+    overflow: hidden;
+}
+
+.la-pack-cards {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.package-card {
+    flex: 0 0 calc((100% - 40px) / 3); 
+    height: 60vh;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.package-card img {
+    margin: 10px 0px;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.pk-days {
+    position: absolute;
+    left: 50%;
+    bottom: 18vh;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+
+.pk-days img {
+    width: 20px;
+    height: 20px;
+}
+
+.la-pack-cards h2 {
+    margin: 20px 10px 10px;
+    color: black;
+}
+
+.booking {
+    color: white;
+    background-color: #73ff00;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.package-line {
+    width: 60%;
+    margin: auto;
+}
+
+.btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.l {
+    left: 0px;
+}
+
+.r {
+    right: 0px;
+}
+
+.footer{
+    margin-top: 65vh;
+}
+
+
+</style>
+
+<script>
+    let currentIndex = 0;
+
+function slide(direction){
+    const slider = document.getElementById('slider');
+    const images = slider.querySelectorAll('img');
+    const total = images.length;
+
+    currentIndex += direction
+
+    //wrap around
+    if(currentIndex < 0) currentIndex = total - 1;
+    if(currentIndex >= total) currentIndex = 0;
+
+    slider.style.transform = `translate(-${currentIndex * 100}%)`;
+}
+
+
+// treking slider
+function trslide(direction){
+    const slider = document.getElementById('tr-slider');
+    const images = slider.querySelectorAll('img');
+    const total = images.length;
+
+    currentIndex += direction
+
+    //wrap around
+    if(currentIndex < 0) currentIndex = total - 1;
+    if(currentIndex >= total) currentIndex = 0;
+
+    slider.style.transform = `translate(-${currentIndex * 100}%)`;
+}
+
+//capping slider
+function cpslide(direction){
+    const slider = document.getElementById('cp-slider');
+    const images = slider.querySelectorAll('img');
+    const total = images.length;
+
+    currentIndex += direction
+
+    //wrap around
+    if(currentIndex < 0) currentIndex = total - 1;
+    if(currentIndex >= total) currentIndex = 0;
+
+    slider.style.transform = `translate(-${currentIndex * 100}%)`;
+}
+
+
+//package slider
+const track = document.getElementById("package-slide");
+const cards = document.querySelectorAll(".package-card");
+const cardWidth = cards[0].offsetWidth + 20; // card + left/right margin (20px each side)
+
+function pkslide(direction) {
+    const totalCards = cards.length;
+
+    currentIndex += direction;
+
+    // Clamp so we don't overflow
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > totalCards - 1) currentIndex = totalCards - 1;
+
+    const moveX = currentIndex * cardWidth;
+    track.style.transform = `translateX(-${moveX}px)`;
+}
+
+
+
+</script>
+{% endblock %}

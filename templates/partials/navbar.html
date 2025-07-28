@@ -1,0 +1,40 @@
+<nav id="nav">
+    <div id="logo">
+        <h1>हिमाचल valley</h1>
+    </div>
+    <div id="menu">
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('fest_event')}}">Festival Events</a>
+        <a href="{{url_for('cottage_stay')}}">Cottage Stay</a>
+        <div id="dropdown">
+            <a href="#">Explore Destination ▾</a>
+            <div id="dropdown-content">
+                <a href="{{url_for('uk')}}">उत्तराखंड (Uttarakhand)</a>
+                <a href="{{url_for('hp')}}">हिमाचल प्रदेश (Himachal Pradesh)</a>
+
+            </div>
+        </div>
+
+        <a href="{{url_for('contact')}}">Contact Us</a>
+    </div>
+    <div id="mnu">
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search destinations...">
+            <button id="search-btn">Search</button>
+        </div>
+        <ul id="search-results"></ul>
+        <div class="mnu-bar">
+            <i class="fa-solid fa-bars" id="menu-bars"></i>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="{{url_for('home')}}">Logout</a></li>
+                <li><a href="{{url_for('fest_event')}}">Fest & Events</a></li>
+                <li><a href="{{url_for('cottage_stay')}}">Cottage</a></li>
+                <li><a href="{{url_for('uk')}}">Uk Adventure</a></li>
+                <li><a href="{{url_for('la_hp')}}">Adventures Ladakh</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>

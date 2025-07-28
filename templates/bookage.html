@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Travel Package</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bookage.css') }}">
+    <link rel="icon" href="{{url_for('static', filename='images/bg-img/favicon.jpg')}}" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="booking-wrapper">
+        <!-- Booking Form Section -->
+        <div class="booking-form-section">
+            <h2>Book Travel Package</h2>
+            <form id="booking-form" method="POST" action="/create-checkout-session">
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+                <label>Phone</label>
+                <input type="tel" name="phone" required>
+
+                <label>No. of Persons</label>
+                <input type="number" name="persons" min="1" required>
+
+                <label>Price per Person:</label>
+                <p id="price">₹{{ package.price_p }}</p>
+
+                <!-- back price to beckend -->
+                <input type="hidden" name="total_price" id="total_price" value="{{ package.price }}">
+
+                <button type="submit" id="payBtn">Proceed to Pay</button>
+            </form>
+        </div>
+
+        <!-- Package Info Section -->
+        <div class="package-info-section">
+            <img src="{{url_for('static', filename='images/'+ package.image) }}" alt="Package Image">
+            <div class="package-details">
+                <p><strong>Location:</strong> {{ package.package_name }}</p>
+                <p><strong>Price:</strong> ₹{{ package.price_p }}</p>
+                <p><strong>Duration:</strong> {{ package.duration }}</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
