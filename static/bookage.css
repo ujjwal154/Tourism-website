@@ -1,0 +1,95 @@
+/* Wrapper layout */
+.booking-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f4f8fc;
+    gap: 30px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Booking form styles */
+.booking-form-section {
+    flex: 1 1 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.booking-form-section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.booking-form-section label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.booking-form-section input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form-section input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#payBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#payBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Package info styles */
+.package-info-section {
+    flex: 1 1 350px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.package-info-section img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.package-details {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.package-details p {
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .booking-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

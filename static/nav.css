@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  width: 100%;
+  height: 10%;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+
+#logo h1 {
+  font-size: 30px;
+  font-family: 'MyFont', Latone;
+  color: white;
+}
+
+#menu {
+  display: flex;
+  gap: 30px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* padding: 30px; */
+}
+
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: rgba(255, 255, 255, 0.933); dark background */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(12, 11, 11, 0.514);
+  z-index: 999;
+}
+
+#dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-family: 'MyFont', Latone;
+}
+
+#dropdown-content a:hover {
+  background-color: rgba(9, 6, 6, 0.622);
+  box-shadow: 0 0 10px 4px #fff;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+#mnu {
+  color: white;
+  position: relative;
+  display: flex;
+  padding-right: 35px;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container input {
+  width: 5vh;
+  display: none;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border: 5px;
+}
+
+#search-btn {
+  display: none;
+  padding: 5px 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-results {
+  position: absolute;
+  top: 0px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 60px;
+  width: 250px;
+  background: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+#search-results li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#search-results li:hover {
+  background-color: #ffffff44;
+}
+
+
+/* Navigation bar itself */
+.mnu-bar {
+  /* background-color: #00796b; */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Bars icon */
+#menu-bars {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  position: absolute;
+  top: 8vh;
+  right: 5px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #004d40;
+  max-height: 50vh;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Show menu when active */
+.nav-links.active {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Menu item styling */
+.nav-links li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #00695c;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 16px;
+}

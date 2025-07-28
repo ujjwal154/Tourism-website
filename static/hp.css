@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../static/font/Latone.ttf') format('truetype'),
+        url('../static/font/Latone.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#manali {
+    height: 100%;
+    width: 100%;
+}
+
+#top {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 85vh;
+    background-image: url(../static/images/hp_img/bg-1.jpg);
+    background-size: cover;
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+}
+
+
+
+#overlay {
+    position: absolute;
+    height: auto;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.397);
+    z-index: 1;
+}
+
+#menu a:hover {
+    box-sizing: 10px;
+    box-shadow: 0 0 10px 4px #538c57;
+}
+
+#hero-top {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+   margin-top: 35vh;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-shadow: 4px 4px 6px black;
+}
+
+#hero-bottom {
+    position: absolute;
+    text-align: center;
+    font-family: 'MyFont', Latone;
+    color: white;
+    font-size: 20px;
+    gap: 5px;
+    top: 65vh;
+    width: 100%;
+    height: 80px;
+}
+
+
+#hp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#hp-btn span {
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 30px;
+}
+
+#hp-btn span:hover {
+    /* box-shadow: 0 0 4px 4px #f1df88;
+    background-color: rgba(16, 16, 16, 0.899); */
+    color: #ffffff;
+    font-size: 35px;
+}
+
+#hero-bottom h2 {
+    text-decoration: underline;
+
+}
+
+#bottom-menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 20px;
+
+}
+
+#bottom-menu a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    text-shadow: 6px 6px 8px black;
+}
+
+#bottom-menu a:hover {
+    box-shadow: 0 0 10px 4px #538c57;
+    border-radius: 9px;
+}
+
+#center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    position: absolute;
+    top: 85%;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    gap: 40px;
+}
+
+#hp-content {
+    position: relative;
+    width: 50%;
+    height: 72vh;
+}
+
+#hp-content:hover {
+    box-shadow: 0 0 10px 4px #629462;
+}
+
+#hp-map:hover {
+    box-shadow: 0 0 10px 4px #629462;
+}
+
+#hp-content h1 {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    font-size: 35px;
+    font-family: 'MyFont', Latone;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#hp-content p {
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hp-map {
+    width: 50%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+
+#feature-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 82%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-feature {
+    background: #ffffff;
+    width: 1000%;
+    height: 50%;
+
+}
+
+#center-feature {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10%;
+    padding-left: 6%;
+    background: #be0000;
+    width: 80%;
+    height: 50%;
+    border-radius: 15px;
+
+}
+
+#center-feature img {
+    width: 50%;
+    height: 60vh;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+#top-feature {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+#top-text {
+    margin-top: 20px;
+    margin-right: 13%;
+}
+
+#top-text p {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+#top-text h2 {
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+.exp-feature {
+    background-size: cover;
+    margin: 40px auto;
+    width: 60%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+#exp-top-text {
+ width: 40vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#exp-top-text-h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+
+#exp-top-text p {
+    font-family: 'MyFont', Latone;
+    font-size: 30px;
+    color: black;
+}
+#exp-feature-btn{
+    background-color: #ff0000;
+    color: white;
+    font-size: 22px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease-in;
+}
+#exp-feature-btn:hover{
+    background-color: #be0000;
+}
+
+.explore-top-card{
+    text-align: center;
+    margin:auto;
+    width: 40vh;
+    height: 48vh;
+    border-radius: 20%;
+}
+
+.explore-card{
+    text-align: center;
+    margin:auto;
+    width: 40vh;
+    height: 48vh;
+    border-radius: 20%;
+    transition: 0.3s ease-in;
+}
+.explore-card:hover{
+    transform: scale(1.05);
+}
+
+.explore-card h1{
+    margin-top: 280px;
+    color: white;
+    text-shadow: 4px 4px 4px black ;
+}
+.explore-card a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#exp-card-one{
+    background:linear-gradient(rgba(0, 0, 0, 0.326)),
+    url(../static/images/hp_img/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#exp-card-two{
+    background:linear-gradient(rgba(0, 0, 0, 0.326)),
+    url(../static/images/hp_img/img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#exp-card-three{
+    background:linear-gradient(rgba(0, 0, 0, 0.326)),
+    url(../static/images/hp_img/img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#exp-card-four{
+    background:linear-gradient(rgba(0, 0, 0, 0.326)),
+    url(../static/images/hp_img/img-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#exp-card-five{
+    background:linear-gradient(rgba(0, 0, 0, 0.304)),
+    url(../static/images/hp_img/img-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+

@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../static/font/Latone.ttf') format('truetype'),
+        url('../static/font/Latone.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-overlay{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.515)),
+    url(../static/images/contact/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-top-section{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-top-left{
+    width: 100%;
+    height: 20vh;
+    margin: 0px 10px;
+}
+#contact-h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+   margin: 10px 0px;
+    font-size: 45px;
+    color: white;
+}
+#contact-p{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 400;
+}
+
+.contact-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.contact-detail{
+    display: flex;
+    align-items: center;
+    
+}
+.contact-detail img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact-top-right{
+    width: 100%;
+    height: 20vh;
+     margin: 0px 10px;
+}
+
+#contact-top-img{
+   margin-left: 40px;
+    width: 400px;
+    height: 300px;
+    border-radius: 18px;
+}
+
+
+.contact-bottom-section{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50vh;
+    padding: 30px;
+}
+
+#botm-heading{
+    color: white;
+    font-size: 50PX;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.contact-form #form-group{
+    margin-bottom: 20px;
+}
+
+.contact-form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form select,
+.contact-form input,
+.contact-form textarea{
+width: 50%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #26a69a;
+    outline: none;
+}
+
+.form-submit-btn {
+    display: block;
+    margin-top: 20px;
+    width: 50%;
+    padding: 14px;
+    background: #00796b;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background: #004d40;
+}

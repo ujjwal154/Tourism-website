@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Myfont';
+    src: url('../static/font/font-1.ttf'),
+        url('../static/font/font-2.ttf'),
+        url('../static/font/font-3.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.header-section {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../static/images/fest_hp/bg-4.jpg);
+    background-size: 1700px 600px;
+    background-repeat: no-repeat;
+    transition: background-image 0.1s ease-in-out;
+}
+
+#header-heading {
+    color: white;
+    position: absolute;
+    bottom: 20vh;
+    left: 20vh;
+    padding: 2px 10px;
+    background-color: rgba(0, 0, 0, 0.525);
+    border: 2px solid white;
+}
+
+#navbar {
+    margin-top: 10px;
+}
+
+#fest-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.244));
+}
+
+.hero-section {
+    margin-top: 0px;
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    text-decoration: underline;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.hero-left {
+    width: 50%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.hero-left h2 {
+    color: black;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-left p {
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 1.6;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.fest-hero-right {
+    width: 50%;
+    height: fit-content;
+}
+
+.fest-hero-right img {
+    width: 500px;
+    height: 450px;
+    position: relative;
+    left: 110vh;
+    bottom: 45vh;
+    border-radius: 15px;
+}
+
+.fest-main-section {
+    margin: 10px auto;
+    width: 80%;
+    height: fit-content;
+}
+
+.top-overlay {
+    width: 100%;
+    height: 40vh;
+    height: fit-content;
+
+}
+
+.main-top {
+    width: 100%;
+    height: 30vh;
+}
+
+#main-top-h2 {
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    color: black;
+}
+
+#main-top-btn {
+    position: relative;
+    top: 100px;
+    font-size: 26px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(255, 94, 0);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+#main-top-btn:hover {
+    background-color: rgb(187, 68, 0);
+}
+
+
+.main-center {
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
+
+}
+
+.fest-event {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0px;
+    width: 100%;
+    height: fit-content;
+
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.fest-event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.fest-event h2 {
+
+    left: 13vh;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 2px 0.5px rgba(255, 255, 255, 0.7);
+}
+
+.fest-event h3 {
+    font-size: 22px;
+    ;
+}
+
+.fest-event img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+
+
+}
+
+
+.fest-event button {
+    border: none;
+    padding: 2px 4px;
+    font-size: 22px;
+    border-radius: 12px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.fest-event button:hover {
+    background-color: rgb(175, 0, 0);
+}
+
+.fest-event.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pagination-controls {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.pagination-controls button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.pagination-controls button:hover {
+    background-color: #ff3d00;
+}
+
+
+
+/* travel packages  */
+.travel-package {
+    margin: 10px auto;
+    width: 90%;
+    height: 90vh;
+}
+
+#travel-package-heading {
+    font-size: 42px;
+    color: black;
+}
+
+.travel-package-cards-wrapper {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.travel-package-cards {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: max-content;
+    padding-bottom: 20px;
+    height: 65vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.hp-package-card {
+    width: 40vh;
+    height: 55vh;
+    background-color: white;
+    flex: 0 0 auto;
+    box-shadow: 10px 10px 10px rgba(3, 3, 3, 0.512);
+}
+
+#hp-package-one img {
+    width: 40vh;
+    height: 35vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.227));
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#hp-package-h2 {
+    position: relative;
+    bottom: 20px;
+    margin: 2px auto;
+    width: 30vh;
+    display: block;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+
+
+#hp-pack-botm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#hp-pack-botm p {
+    color: black;
+    font-size: 18px;
+}
+
+#hp-pack-botm button {
+    background: #FEAC5E;
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    cursor: pointer;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+
+.package-nav-buttons {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.package-nav-buttons button {
+    font-size: 24px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#bookingForm {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+
+    height: 50vh;
+    position: absolute;
+    top: 350vh;
+    left: 70vh;
+    display: none;
+}
+/* #fest-footer {
+    margin-top: 20%;
+} */
